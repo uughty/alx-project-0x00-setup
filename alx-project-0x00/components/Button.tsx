@@ -1,5 +1,13 @@
 import React from "react";
-import { ButtonProps } from "@/interfaces";
+
+
+export interface ButtonProps {
+  title: string;
+  size?: "small" | "medium" | "large";
+  shape?: "rounded-sm" | "rounded-md" | "rounded-full" | "rounded-lg";
+  styles: string; // ✅ Make sure this line exists
+}
+
 
 const Button: React.FC<ButtonProps> = ({ title, size = "medium", shape = "rounded-md", styles }) => {
   let padding = "px-4 py-2"; // default medium
