@@ -4,6 +4,6 @@ export interface PillProps {
 
 export interface ButtonProps {
   title: string;
-  size?: "small" | "medium" | "large"; // ✅ Corrected
-  shape?: "rounded-sm" | "rounded-md" | "rounded-full"; // ✅ Corrected
+  size?: "small" | "medium" | "large";
+  shape?: "rounded-sm" | "rounded-md" | "rounded-full";
 }
